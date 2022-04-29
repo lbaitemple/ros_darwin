@@ -64,4 +64,7 @@ git clone https://github.com/aws-robotics/aws-robomaker-small-house-world.git
 
 cd ..
 
+colcon build
+source install/setup.bash
+
 
