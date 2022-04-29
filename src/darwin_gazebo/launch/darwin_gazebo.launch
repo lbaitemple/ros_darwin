@@ -1,0 +1,37 @@
+<launch>
+
+  <param name="robot_description" textfile="$(find darwin_description)/urdf/darwin.urdf" />
+   
+  <arg name="gui" default="true"/>
+   
+  <!-- Launch World -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find aws_robomaker_small_house_world)/worlds/small_house.world"/>
+    <arg name="paused" default="false"/>
+    <arg name="use_sim_time" default="true"/>
+    <arg name="gui" default="$(arg gui)"/>
+    <arg name="headless" default="false"/>
+    <arg name="debug" default="false"/>
+    <arg name="verbose" default="true"/>
+  </include>
+
+
+  <!-- include file="$(find gazebo_ros)/launch/empty_world.launch"-->
+    <!-- arg name="world_name" value="worlds/empty.world"/ -->
+    <!-- arg name="paused" value="false"/ -->
+    
+  <!-- /include -->
+  
+  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-file $(find darwin_description)/urdf/darwin.urdf -urdf -model darwin -z 0.3417" />
+
+
+  <include file="$(find darwin_control)/launch/darwin_control.launch"/>
+
+  <node name="darwin_walker" pkg="darwin_gazebo" type="walker.py" />
+
+
+
+
+
+
+</launch>
