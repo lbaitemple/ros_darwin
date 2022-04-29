@@ -10,6 +10,9 @@ cd ..
 sudo chmod 755 setup.sh
 bash setup.sh
 
+colcon build
+source install/setup.bash
+
 ```
 
 ## To launch the darwin robot inside a small house
