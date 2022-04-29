@@ -57,4 +57,7 @@ if [ $var = "20.04" ]; then
     source /opt/ros/noetic/setup.bash
 fi
 
+catkin_init_workspace
+cd ..
+
 
