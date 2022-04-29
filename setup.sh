@@ -47,7 +47,7 @@ else
    sudo apt install cmake -y
 fi
 
-# Clone darwin package into ros_darwin workspace
+cd src
 
 if [ $var = "18.04" ]; then
     source /opt/ros/melodic/setup.bash
