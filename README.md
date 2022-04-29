@@ -2,17 +2,10 @@
 ## Installation and setup
 ```
 git clone https://github.com/anwaybose/ros_darwin.git
-cd ros_darwin/src
-git clone git clone https://github.com/ros/xacro.git
-git clone https://github.com/aws-robotics/aws-robomaker-small-house-world.git
+cd ros_darwin
 
-cd ..
 sudo chmod 755 setup.sh
 bash setup.sh
-
-colcon build
-source install/setup.bash
-
 ```
 
 ## To launch the darwin robot inside a small house
