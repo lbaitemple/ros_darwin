@@ -41,7 +41,7 @@ rostopic pub /darwin/j_pan_position_controller/command std_msgs/Float64 -- -1
 ```
 ### To reposition the head
 ```
-rostopic pub /darwin/j_pan_position_controller/command std_msgs/Float64 -- -1
+rostopic pub /darwin/j_pan_position_controller/command std_msgs/Float64 -- -0
 ```
 
 ### To move the robot forward
