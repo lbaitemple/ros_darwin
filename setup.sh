@@ -58,6 +58,10 @@ if [ $var = "20.04" ]; then
 fi
 
 catkin_init_workspace
+
+git clone git clone https://github.com/ros/xacro.git
+git clone https://github.com/aws-robotics/aws-robomaker-small-house-world.git
+
 cd ..
 
 
