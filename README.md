@@ -6,7 +6,6 @@ cd ~/robot_ws/src
 git clone https://github.com/lbaitemple/ros_darwin
 mv ros_darwin/setup.sh ../
 cd ../
-chmod 755 setup.sh
 bash ./setup.sh
 ```
 
