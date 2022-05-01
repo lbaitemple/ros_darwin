@@ -1,15 +1,18 @@
 # ros_darwin
 ## Installation and setup
 ```
-git clone https://github.com/anwaybose/ros_darwin.git
-cd ros_darwin
-
-sudo chmod 755 setup.sh
-bash setup.sh
+mkdir -p ~/robot_ws/src
+cd ~/robot_ws/src
+git clone https://github.com/lbaitemple/ros_darwin
+mv ros_darwin/setup.sh ../
+cd ../
+chmod 755 setup.sh
+bash ./setup.sh
 ```
 
 ## To launch the darwin robot inside a small house
 ```
+source install/setup.bash
 roslaunch darwin_gazebo darwin_gazebo.launch
 ```
 ## To see in the image viewer,
