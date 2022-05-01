@@ -57,7 +57,6 @@ if [ $var = "20.04" ]; then
     source /opt/ros/noetic/setup.bash
 fi
 
-catkin_init_workspace
 
 git clone https://github.com/ros/xacro.git
 git clone https://github.com/aws-robotics/aws-robomaker-small-house-world.git
